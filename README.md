@@ -942,6 +942,12 @@ Groundedness, and Answer Relevance.
     your own corpus with statistical IR metrics (Recall/NDCG/MAP/bpref) plus
     paired-bootstrap CIs and Wilcoxon p-values to call architectural winners
     with confidence before you commit infrastructure.
+- [rag-verifier](https://github.com/hlc0000/rag-verifier)
+  <!-- verified: 2026-10-25 -->
+  - Quality gate for the RAG evidence layer: a deterministic rule layer
+    checks chunk self-sufficiency before ingestion, and a fail-open LLM
+    layer verifies that citations support their claims, with bilingual
+    (zh/en) rule parity enforced in CI.
 - [Ragas](https://github.com/explodinggradients/ragas)
   - A framework that uses an "LLM-as-a-Judge" to evaluate your pipeline. It
     calculates metrics like Faithfulness (did the answer come from the context?)
